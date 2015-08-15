@@ -1,0 +1,55 @@
+﻿<!DOCTYPE Html>  
+<html>
+<head>
+<style type="text/css">
+#container{
+	max-width: 1360px;
+	margin: auto;
+	padding: 0 10px;
+}
+#left {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+#main {
+	margin-right: 350px;
+	min-width: 1%;
+}
+#right {
+	width: 340px;
+	position: relative;
+	margin-left: -340px;
+	float: left;
+}
+@media screen and (max-width: 768px) {
+	#main {
+		margin-right: 0;
+	}
+	#right {
+		margin-left: 0;
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+}
+</style>
+
+<!--[if lt IE 9]>
+<script src="html5shiv.min.js"></script>
+<script src="css3-mediaqueries.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+	<div id="container" >
+		<div id="left">
+			<div id="main" style="height:600px;background:#868"></div>
+		</div>
+		<div id="right" style="height:500px;background:#CCC"></div>
+	</div>
+
+</body>
+</html>

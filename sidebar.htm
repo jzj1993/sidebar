@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#primary {
+	background: #AAA;
+	float: left;
+	padding: 50px;
+	width: 960px;
+	box-sizing: border-box;
+}
+#main {
+	margin: auto;
+	width: 1280px;
+}
+#sidebar {
+	background: #BBB;
+	float: right;
+	width: 310px;
+	box-sizing: border-box;
+}
+@media screen and (max-width:1280px){
+	#main{width:98%}
+	#primary{width:68%;padding:30px}
+	#sidebar{width:31%}
+}
+@media screen and (max-width:1024px){
+	#primary{width:67%}
+	#sidebar{width:32%}
+}
+@media screen and (max-width:900px){
+	#primary{width:100%;padding:20px}
+	#sidebar{width:100%;padding:20px}
+}
+</style>
+
+<!--[if lt IE 9]>
+<script src="html5shiv.min.js"></script>
+<script src="css3-mediaqueries.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+	<div id="main" class="wrapper">
+
+		<div id="primary" class="site-content">
+			<div style="height:800px;background:#888;margin:10px;"></div>
+		</div><!-- // primary -->
+
+		<div id="sidebar" class="widget-area">
+			<div style="height:500px;background:#555;margin:10px;"></div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
